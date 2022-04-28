@@ -12,7 +12,7 @@
 
 - Open a command prompt and upgrade pip.
 
-$`python -m pip install -–upgrade pip`
+$`python -m pip install --upgrade pip`
 
 ## Installation
 
