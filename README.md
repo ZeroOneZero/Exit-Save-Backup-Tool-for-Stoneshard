@@ -1,14 +1,14 @@
-# Stoneshard Exit Save Backup Tool
+# Exit-Save Backup Tool for Stoneshard
 
-> **Original files and idea came from [zMenta](https://github.com/zMenta). I just changed the code to be more user friendly.**
+*The original files and idea came from **[zMenta](https://github.com/zMenta)**. I simply updated the code to be more user-friendly.*
 
 ## Requirements
 
 - 28KB of storage
 
-- At least version 3.X or better [Python](https://www.python.org/downloads/)
+- [Python](https://www.python.org/downloads/) version 3.X or higher.
 
-- During the Python install check all the boxes, especially installing Python to your path.
+- Check all the boxes during the Python installation, especially when installing Python to your path.
 
 - Open a command prompt and upgrade pip.
 
@@ -18,59 +18,60 @@ $`python -m pip install --upgrade pip`
 
 - Download or clone this [repo](https://github.com/ZeroOneZero/Stoneshard-Exit-Save-Backup-Tool.git)
 
-- Unzip and/or CD into the repo
+- Unzip the repo.
 
-- Inside the directory, open a command prompt and verify the Python version
+- From inside the repo directory, open a command prompt and verify the Python version.
 
 $`python --version`
 
-> **Python 3.10.4** 
+>**Python 3.10.4**
 
-- Then install the requirements.txt
+- Next we can install the requirements.txt
 
 $`pip install -r requirements.txt`
 
-## Info
-- To run the script double click on the `run.py` file or run it from the command prompt.
+- To run the script, double-click on the `run.py` file. You may also execute it from the command window with:
 
-$`python run.py`
+$`python run.py` **or** `python3 run.py`
 
-- Upon startup the script creates two folders inside of your **%LOCALAPPDATA%/Stoneshard** save directory for **Character 1**
+*The latter is a command in Linux.*
 
-> **If you are using another character, make sure you go into `settings.py` and update the directory from character_1 to charater_x**
+- When you run the script, it creates backup directories in the **%LOCALAPPDATA%/Stoneshard** directory for you.
 
-### **Backup your save folder before running this tool.**
+- By default, the first character you create is named **character 1**.
 
-- As long as you need the script to backup and restore you will need to run it and keep it running during the play.
+> **If you are using any additional characters, make sure you go into `settings.py` and update the directory name from `character_1` to `character_#`.
+
+*Backup your save folder before running this tool.*
+
+*As long as you need the script to backup and restore, you will have to run it and keep it running during the play.*
 
 ## Usage
 
-- Run the script
+- Run the script.
 
 - Load up a save
 
-- When you want to save your progress, press **ESC** and select **Save and Exit**
+- To save your progress, press **ESC** and then select **Save and Exit.**
 
-- This takes you back to the Main Menu.
+*This action will take you back to the Main Menu.*
 
-### **DO NOT EXIT THE GAME**
+# DO NOT EXIT THE GAME
 
-> **The game, by default, erases the Exit Save upon exiting the game.**
+*The game, by default, erases the exit save upon exiting the game.*
 
 - To backup the **Exit Save**, press `F5`
 
-- `F5` triggers the script to backup the `exitsave_1` directory to `.exitsave_1` inside the same parent directory.
+*Pressing **F5** causes the script to backup the **exitsave_1** directory to **.exitsave_1** within the same parent directory.*
 
-- Load back into the **Exit Save** via **Load** in the Main Menu.
+- Return to the **Exit Save** by selecting **Load** from the Main Menu.
 
 - When you die, exit back to the main menu.
 
-- To load the Exit Save press `F8`
+- To load the Exit Save, press “F8.”
 
-- `F8` triggers the script to copy the **Exit Save** from `.exitsave_1` to the `exitsave_1` directory
+*Pressing **F8** causes the script to copy the **Exit Save** from the **.exitsave_1** directory to the **exitsave_1** directory.*
 
-- This allows you to save anywhere and anytime you want
+- This allows you to save anywhere and anytime you want.
 
 # CHEERS
-
-
